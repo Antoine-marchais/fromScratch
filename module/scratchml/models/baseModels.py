@@ -1,6 +1,6 @@
 import numpy as np
 from abc import ABC,abstractmethod
-from utils import metrics as mts
+from ..utils import metrics as mts
 
 class BaseRegressor(ABC):
     """

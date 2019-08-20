@@ -8,7 +8,6 @@ def getFolds(data,nFolds):
     """
     n = data.shape[0]
     nTest = n//nFolds
-    nTrain = n-nTest
     folds = []
     for i in range(nFolds):
         testid = np.arange(nTest*i,nTest*(i+1))

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: scratchml
+Version: 0.0.1
+Summary: A small alternative ml package
+Home-page: https://github.com/pypa/sampleproject
+Author: Obal
+License: UNKNOWN
+Description: This module is an implementation of the basic machine learning algorithm
+        that are well described today. The implementation of each module is meant 
+        to stay simple, to allow the aspiring machine learning student to understand
+        the implementation of such algorithms.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

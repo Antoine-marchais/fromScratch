@@ -1,7 +1,8 @@
 import numpy as np
 
-eps
-def grad(func,point,dh==None):
+eps = np.finfo(float).eps
+
+def grad(func,point,dh=None):
     """
     finite difference gradient to be used when 
     analytical gradient is not provided
@@ -13,7 +14,10 @@ def grad(func,point,dh==None):
         if dh != None :
             dn[i] = dh
         else : 
-
+            if point[i] != 0 : 
+                dn[i] = np.sqrt(eps)*point[i]
+            else : 
+                dn[i] = eps
         gd[i] = (func(point+dn)-func(point-dn))/(2*dh)
     return gd
 
@@ -31,7 +35,6 @@ class GradOptimizer:
         """
         self.numericGrad = True
         self.func = func
-        e
         if gradient != None :
             self.gradient = gradient
             self.numericGrad = False
@@ -45,7 +48,7 @@ class GradOptimizer:
         take a gradient step
         """
         if self.numericGrad:
-            gd = 
+            gd = grad(self.func,self.points[-1])
         gd = self.gradient(self.points[-1])
         self.points.append(self.points[-1]-step*gd)
         self.values.append(self.func(self.points[-1]))

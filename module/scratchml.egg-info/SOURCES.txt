@@ -1,0 +1,15 @@
+README.md
+setup.py
+scratchml/__init__.py
+scratchml.egg-info/PKG-INFO
+scratchml.egg-info/SOURCES.txt
+scratchml.egg-info/dependency_links.txt
+scratchml.egg-info/top_level.txt
+scratchml/models/__init__.py
+scratchml/models/baseModels.py
+scratchml/models/linearRegression.py
+scratchml/utils/__init__.py
+scratchml/utils/graphics.py
+scratchml/utils/metrics.py
+scratchml/utils/optimize.py
+scratchml/utils/sampleTools.py

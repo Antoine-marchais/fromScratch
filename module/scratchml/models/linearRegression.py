@@ -1,5 +1,5 @@
 import numpy as np
-from models.baseModels import BaseRegressor
+from .baseModels import BaseRegressor
 
 class LinearRegressor(BaseRegressor):
     """
